@@ -14,15 +14,17 @@ myBlog.add_post("Marley's son Damien releases new roots album",2013,12,28,"I don
 
 get '/blog' do 
 	@posts = myBlog.show
+	@blog_name = myBlog.blog_name
 
-	erb :show_posts
+	erb :show_posts, layout: :sinatra_layout
 end
 
 get '/post/:post' do 
+	@blog_name = myBlog.blog_name
 	posts = myBlog.show
 	post_id = params[:post].to_i
 	@post = posts[post_id]
-	erb :show_post_details
+	erb :show_post_details, layout: :sinatra_layout
 end
 
 post '/create_task' do

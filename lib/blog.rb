@@ -1,6 +1,7 @@
 require 'date'
 
 class Blog
+	attr_reader :blog_name
 	def initialize(name)
 		@post_array = []
 		@blog_name = name
