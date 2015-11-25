@@ -1,0 +1,3 @@
+<% @posts.each_with_index do |post,index| %>
+  <p><a href="/post/<%= index %>"><%= post.title %></a></p>
+<% end %>
