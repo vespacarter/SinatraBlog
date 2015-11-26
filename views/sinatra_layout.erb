@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Carter's Blog</title>
-    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" href="style.css"> 
   </head>
   <body>
-  	<header>
+  	<header class="blog-header">
 		<p><h1><%= @blog_name %></h1></p>
 	</header>
 	<div>
 		<p><%= yield %></p>
 	</div>
-	<footer>
+	<footer class="blog-footer">
 		<div><a href="/blog">Blog Home<a></div><div><a href="/new_post">New Post</a></div>
 	</footer>
  </body>

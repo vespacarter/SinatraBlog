@@ -1,0 +1,28 @@
+body {
+	background-color: #1F1F20;
+}
+
+a {
+	color: #567EBB;
+}
+
+.post-list{
+	border-radius: 10px;
+	background: #2B4C7E;
+}
+
+.blog-header{
+	border-radius: 10px;
+	background: #2B4C7E;
+	color: #DCE0E6;
+	text-align: center;
+	letter-spacing: 10px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.blog-footer{
+	border-radius: 10px;
+	background: #2B4C7E;
+}
