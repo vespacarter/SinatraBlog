@@ -2,10 +2,17 @@
 <html> 
   <head>
     <meta charset="utf-8">
-    <title>Todos</title> 
+    <title>Carter's Blog</title> 
   </head>
   <body>
-	<p><h1><%= @blog_name %></h1></p>
-	<p><%= yield %></p>
+  	<header>
+		<p><h1><%= @blog_name %></h1></p>
+	</header>
+	<div>
+		<p><%= yield %></p>
+	</div>
+	<footer>
+		<div><a href="/blog">Blog Home<a></div><div><a href="/new_post">New Post</a></div>
+	</footer>
  </body>
 </html>

@@ -27,7 +27,13 @@ get '/post/:post' do
 	erb :show_post_details, layout: :sinatra_layout
 end
 
-post '/create_task' do
-	mytodolist.add_task(Task.new(params[:content]))
-	redirect ('/tasks')
+get '/new_post' do
+	@blog_name = myBlog.blog_name
+	erb :new_post, layout: :sinatra_layout
+end
+
+post '/send_post' do
+	time = Time.now
+	myBlog.add_post(params[:post_title],time.year,time.month,time.day,params[:post_text])
+	redirect ('/blog')
 end
