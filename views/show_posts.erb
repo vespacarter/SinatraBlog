@@ -1,5 +1,7 @@
+<div class="post-list">
 <ul>
 <% @posts.each_with_index do |post,index| %>
   <li><p><a href="/post/<%= index %>"><%= post.title %></a></p></li>
 <% end %>
 </ul>
+</div>

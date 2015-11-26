@@ -1,0 +1,33 @@
+.post-list{
+	margin:3px;
+	border-radius: 30px;
+	background: 2B4C7E;
+}
+
+.blue {
+	background: blue;
+	border: 5px solid red;
+}
+.green {
+	background: lime;
+}
+
+#red {
+	background: red;
+	border: 5px dotted blue;
+}
+
+#top{
+	position: absolute;
+	top: 350px;
+	left: 350px;
+}
+
+#bottom{
+	position: absolute;
+	top: 400px;
+	left: 500px;
+}
+.direction{
+	padding: 20px;
+}
