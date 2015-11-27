@@ -1,7 +1,12 @@
-<div class="post-list">
-<ul>
-<% @posts.each_with_index do |post,index| %>
-  <li><p><a href="/post/<%= index %>"><%= post.title %></a></p></li>
-<% end %>
-</ul>
+<div class="row post-listing">
+	<% @posts.each_with_index do |post,index| %>
+		<div class="col-md-4 post-grid">
+			<div class="row">
+				<img src="http://lorempixel.com/200/100" class="img-responsive img-rounded" />
+			</div>
+			<div class="row">
+  				<a class="post-anchor" href="/post/<%= index %>"><h2><%= post.title %></h2></a>
+  			</div>
+  		</div>
+	<% end %>
 </div>

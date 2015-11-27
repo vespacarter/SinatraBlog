@@ -1,28 +1,140 @@
 body {
 	background-color: #1F1F20;
+	margin-left: 5em;
+	margin-right: 5em;
 }
 
-a {
-	color: #567EBB;
+
+ul
+{
+list-style-type: none;
 }
 
-.post-list{
+.main-content{
 	border-radius: 10px;
 	background: #2B4C7E;
+	padding: 2em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.main-content a{
+	color: #DCE0E6;
 }
 
 .blog-header{
 	border-radius: 10px;
 	background: #2B4C7E;
 	color: #DCE0E6;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.blog-header a{
+	background-color: #567EBB;
+	border: 0;
+}
+
+.blog-header h1{
 	text-align: center;
-	letter-spacing: 10px;
-	font-size: 1.2em;
 	text-transform: uppercase;
-	padding: 10px;
+	letter-spacing: 0.4em;
+	font-size: 2em;
+	font-weight: 900;
+	font-style: bold;
+}
+
+.blog-header h2{
+	text-align: center;
+	letter-spacing: 0.2em;
+	color: #567EBB;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.blog-header .icon{
+	text-align: right;
+	letter-spacing: 0.2em;
+	font-size: 3em;
+	font-style: bold;
+	font-weight: 900;
+	margin: auto;
+}
+
+.post-anchor{
+	text-decoration: none;
+}
+
+.blog-nav{
+	border-radius: 10px;
+	background: #2B4C7E;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+.post-content{
+	border-radius: 10px;
+	background: #606D80;
+	padding-left: 5em;
+	padding-right: 5em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;	
+	margin: -1em;
+	color: #DCE0E6;
+}
+
+.post-content h1{
+	text-transform: uppercase;
+	font-size: 1.3em;
+	font-weight: 700;
+	font-family: 'Orbitron', sans-serif;
+}
+.post-content h2{
+	font-family: 'Molengo', sans-serif;
+	text-align: justify;
+	font-size: 1em;
+}
+
+
+.post-listing{
+	border-radius: 10px;
+	background: #606D80;
+	padding-left: 5em;
+	padding-right: 5em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;	
+	margin: -1em;
+	color: #DCE0E6;
+}
+
+.post-listing img{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.post-listing h2{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 1em;
+	text-align: center;
+}
+
+.post-listing .post-grid{
+	padding: 1.5em;
 }
 
 .blog-footer{
 	border-radius: 10px;
 	background: #2B4C7E;
+	color: #DCE0E6;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	font-size: 0.8em;
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
 }

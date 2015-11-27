@@ -2,18 +2,37 @@
 <html> 
   <head>
     <meta charset="utf-8">
-    <title>Carter's Blog</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title><%= @blog_name %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
   </head>
   <body>
   	<header class="blog-header">
-		<p><h1><%= @blog_name %></h1></p>
+  		<div class="row">
+  			<div class="col-md-3 icon">
+  				<div class="row">
+  				<span class="glyphicon glyphicon-star"></span>
+  				</div>
+  			</div>
+  			<div class="col-md-9">
+				<h1><%= @blog_name %></h1>
+				<h2>Inna BlogSpot stylah</h2>
+			</div>
+		</div>
+		<nav class="blog-nav">
+			<a href="/blog" class="btn btn-info" role="button"><span class="glyphicon glyphicon-home"></span></a>
+			<a href="/new_post" class="btn btn-info" role="button"><span class="glyphicon glyphicon-pencil"></span></a>	
+		</nav>
 	</header>
-	<div>
-		<p><%= yield %></p>
-	</div>
+	<section>
+		<div class="main-content">
+			<%= yield %>
+		</div>	
+	</section>
 	<footer class="blog-footer">
-		<div><a href="/blog">Blog Home<a></div><div><a href="/new_post">New Post</a></div>
+		Hardly developed by Carter at IronHack
 	</footer>
  </body>
 </html>
